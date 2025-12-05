@@ -44,7 +44,7 @@ The performance of the best-tuned **LightGBM Regressor** model on the **test set
 | **Coefficient of Determination ($\mathbf{R^2}$)** | $1 - \frac{SS_{res}}{SS_{tot}}$ | **0.3485** |
 | **Mean Squared Error (MSE)** | $\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2$ | **77.5375** |
 | **Root Mean Squared Error (RMSE)** | $\sqrt{MSE}$ | **8.8055** |
-| **Mean Absolute Error (MAE)** | $\frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$ | **6.1299** |
+| **Mean Absolute Error (MAE)** | $\frac{1}{n}\sum_{i=1}^{n}\|y_i - \hat{y}_i\|$ | **6.1299** |
 
 **Conclusion:**
 The model achieved an $R^2$ of **0.3485** and a RMSE of **8.8055** on the test set, indicating that approximately 35% of the variance in the target variable can be explained by the feature set using the trained model.
